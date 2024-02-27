@@ -1,0 +1,20 @@
+div.contenedor-libros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: center;
+}
+
+hr {
+    margin-top: 50px;
+}
+
+p.libreria {
+    text-align: right;
+}
+
+button#submit{
+    border-radius: 10px;
+}
