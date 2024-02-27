@@ -10,7 +10,6 @@
         <script src="controlador.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -19,10 +18,10 @@
             <h1 style="text-align: center;" class="my-5">Registro de Libros</h1>
 
             <form ng-submit="agregarLibro()" class="input-group mb-3">
-                <input type="text" ng-model="nuevoLibro.nombre" placeholder="Nombre del libro" required class="form-control mx-2">
-                <input type="text" ng-model="nuevoLibro.libreria" placeholder="Libreria" class="form-control mx-2">
-                <input type="text" ng-model="nuevoLibro.sinopsis" placeholder="Sinopsis" class="form-control mx-2">
-                <input type="url" ng-model="nuevoLibro.imagen" placeholder="URL portada" class="form-control mx-2">
+                <input type="text" ng-model="nuevoLibro.nombre" placeholder="Nombre del libro" class="form-control mx-2" required>
+                <input type="text" ng-model="nuevoLibro.libreria" placeholder="Libreria" class="form-control mx-2" required>
+                <input type="text" ng-model="nuevoLibro.sinopsis" placeholder="Sinopsis" class="form-control mx-2" required>
+                <input type="url" ng-model="nuevoLibro.imagen" placeholder="URL portada" class="form-control mx-2" required>
 
                 <button type="submit" class="btn btn-success" id="submit">Añadir Libro</button><br>
             </form>
@@ -37,7 +36,7 @@
                     <div class="card m-3" style="width: 18rem;">
                         <img src="{{libro.imagen}}" class="card-img-top" alt="{{libro.nombre}}">
                         <div class="card-body">
-                            <h5 class="card-title">{{libro.nombre}}</h5>
+                            <h4 class="card-title">{{libro.nombre}}</h4>
                             <p class="card-text">{{libro.sinopsis}}</p>
                             <p class="fw-light fw-bold libreria">{{libro.libreria}}</p>
                         </div>
@@ -45,5 +44,16 @@
                 </div>
             </div>
         </div>
+
+        <footer class="footer mt-auto py-3 bg-dark text-white">
+            <div class="container text-center">
+                <span>
+                    <a href="https://github.com/tineojf" target="_blank">Jean Franco Tineo</a><br>
+                    </div>
+                    <div class="container text-center">
+                        &copy; 2024 Todos los derechos reservados</span>
+            </div>
+        </footer>
+
     </body>
 </html>
